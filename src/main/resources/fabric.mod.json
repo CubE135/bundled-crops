@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bundled-crops",
+	"version": "${version}",
+	"name": "Bundled Crops",
+	"description": "This Mod adds bundles of crops to better organize your farmed goods.",
+	"authors": [
+		"CubE135!"
+	],
+	"contact": {
+		"homepage": "https://cube135.de/",
+		"sources": "https://github.com/CubE135/bundled-crops"
+	},
+	"license": "MIT",
+	"icon": "assets/bundled-crops/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cube135.bundledcrops.BundledCrops"
+		],
+		"fabric-datagen": [
+			"net.cube135.bundledcrops.BundledCropsDataGenerator"
+		],
+		"client": [
+			"net.cube135.bundledcrops.BundledCropsClient"
+		]
+	},
+	"mixins": [
+		"bundled-crops.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
